@@ -23,5 +23,5 @@ setup(
     extras_require={
         "dev": ["pytest>=7.0", "twine>=4.0.2"],  # To be determined
     },
-    python_requires=">=3.10",
+    python_requires=">=3.11",
 )
