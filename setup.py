@@ -13,9 +13,9 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/DrSolidDevil/mlr-gd/",
     author="DrSolidDevil",
-    license="TO BE DETERMINED",
+    license="BSD 3-Clause",
     classifiers=[
-        "License :: OSI Approved :: TO BE DETERMINED",
+        "License :: OSI Approved :: BSD 3-Clause",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
     ],
