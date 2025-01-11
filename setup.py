@@ -1,14 +1,13 @@
 from setuptools import find_packages, setup
 
-with open("src/README.md", "r") as f:
+with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="src",
+    name="melar",
     version="0.0.1",
     description="A package for multiple linear regression by gradient descent.",
-    package_dir={"": "src"},
-    packages=find_packages(where="src"),
+    packages=find_packages(),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/DrSolidDevil/mlr-gd/",
