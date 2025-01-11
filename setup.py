@@ -20,7 +20,7 @@ setup(
     ],
     install_requires=["numpy >= 2.2.1"],
     extras_require={
-        "dev": ["pytest>=7.0", "twine>=4.0.2"],  # To be determined if necessary to include
+        "dev": ["twine>=6.0.1"],
     },
     python_requires=">=3.11",
 )
