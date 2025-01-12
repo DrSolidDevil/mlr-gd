@@ -1,1 +1,1 @@
-from main import LinearRegression
+from melar.main import LinearRegression
