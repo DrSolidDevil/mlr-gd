@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setup(
-    name="melar",
+    name="mlr-gd",
     version="0.0.1",
     description="A package for multiple linear regression by gradient descent.",
     packages=find_packages(),
