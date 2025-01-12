@@ -1,8 +1,8 @@
-<h1 align="center"> 
+<h1 align="center"> <br>
   <img src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png" width="300">
-  <br>
+  <br><br>
 </h1>
-<br>
+
 Multiple linear regression by gradient descent.
 <br><br>
 <h4>Disclaimer:</h4>
