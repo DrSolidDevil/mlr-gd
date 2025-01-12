@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png" width="300">
   <br>
 </h1><br>
-<h2>This is the dev branch where development usually happends</h2>
+<h2>This is the dev branch where development usually happens</h2>
 <br>
 Multiple linear regression by gradient descent.
 <br><br>
