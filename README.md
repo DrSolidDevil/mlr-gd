@@ -18,7 +18,7 @@ To install mlr-gd you can use [pip](https://pip.pypa.io):
 $ python -m pip install mlr-gd
 ```
 
-Alternativly, you can install it by cloning the [GitHub repository](https://github.com/DrSolidDevil/mlr-gd):
+Alternatively, you can install it by cloning the [GitHub repository](https://github.com/DrSolidDevil/mlr-gd):
 ```bash
 $ git clone https://github.com/DrSolidDevil/mlr-gd.git
 $ cd mlr-gd
