@@ -1,6 +1,6 @@
 import numpy as np
 
-import cfuncs
+import melar.cfuncs as cfuncs
 
 
 class LinearRegression:
