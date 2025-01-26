@@ -21,6 +21,8 @@ class LinearRegression:
             cost_function: cost function derivative (UPDATE THIS TO BETTER DESCRIPTION)
             cost_function_deriv: cost function derivative (UPDATE THIS TO BETTER DESCRIPTION)
         """  # noqa: D205, D212, D415
+        if weights_amount < 1:
+            raise ValueError("weights_amount has to be 1 or more")
 
         self.bias = initial_bias
         self.cost_function = cost_function
@@ -32,7 +34,6 @@ class LinearRegression:
             if weights_amount == 1:
                 self.weights = self.weights[0]
         else:
-            #   if type(initial_weights).__name__ == "Series":
             self.weights = initial_weights
 
     def np_predict(self, x: np.ndarray) -> np.int64 | np.float64:
@@ -48,6 +49,7 @@ class LinearRegression:
         Returns:
             Predicted values.
         """
+
         predictions = self.bias + np.dot(self.weights, x)  # dot product is the sum of w * x
         return predictions  # this returns an int or a float
 
@@ -81,7 +83,6 @@ class LinearRegression:
         """
 
         bias_derivative, weights_derivative = self.cost_function_deriv(x_training, y_training, y_predict)
-
         self.bias = self.bias - learning_rate * bias_derivative
         self.weights = self.weights - learning_rate * weights_derivative
 
