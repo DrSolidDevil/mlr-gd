@@ -79,3 +79,9 @@ def mae_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndar
     weights_derivative = -1 * np.dot(y_difference_sign, x_training.T) / len(y_training)
 
     return bias_derivative, weights_derivative
+
+
+# All cost functions that cfuncs has.
+C_FUNCTIONS: tuple = (mse, mae)
+# All derivative cost function that cfuncs has, (They have to have the same index as its cost function)
+C_FUNCTIONS_D: tuple = (mse_deriv, mae_deriv)
