@@ -8,6 +8,8 @@ class LinearRegression:
 
     LinearRegression trains a linear model with weights and a bias using gradient descent to minimize the cost function (MSE).
     """
+    
+    __slots__ = ['bias', 'cost_function', 'cost_function_deriv', 'weights']
 
     def __init__(self, initial_weights: np.ndarray | np.float64 | float = None,
                  initial_bias: np.float64 | float = np.random.uniform(-1, 1), weights_amount: int = 1,
@@ -35,6 +37,9 @@ class LinearRegression:
                 self.weights = self.weights[0]
         else:
             self.weights = initial_weights
+
+    def __repr__(self):
+        return f"{self.__class__.__name__}(bias={self.bias}, weights={self.weights})"
 
     def np_predict(self, x: np.ndarray) -> np.int64 | np.float64:
         """Predict using the linear model.
