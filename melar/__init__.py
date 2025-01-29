@@ -8,7 +8,6 @@ __copyright__ = "Copyright (c) 2025, DrSolidDevil"
 __credits__ = ["DrSolidDevil", "RedDingleBerry"]
 __license__ = "BSD 3-Clause"
 __maintainer__ = ["DrSoliDevil"]
-__repository__ = "https://github.com/DrSolidDevil/mlr-gd"
 __status__ = "Development"
 __version__ = '0.2.0'
 __version_info__ = (0, 2, 0)
