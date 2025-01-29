@@ -1,3 +1,12 @@
+"""cfuncs contains all standard cost functions integrated into mlr-gd and melar.
+
+Each cost function has a name (ex. mse) that returns a cost.
+Each cost function has a derivative function, indicated by _deriv
+
+Cost Functions:
+• Mean Square Error (mse)
+• Mean Absolute Error (mae)
+"""
 import numpy as np
 
 
