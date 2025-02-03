@@ -1,3 +1,9 @@
+"""Main file of melar.
+
+Contains:
+• LinearRegression
+"""
+
 import numpy as np
 
 import melar.cfuncs as cfuncs
