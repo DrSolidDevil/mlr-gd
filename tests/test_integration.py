@@ -88,7 +88,7 @@ def test_0weights_0bias(std_lrate, std_gens, std_arrlen, weights_amount, cost_fu
 
 @pytest.mark.parametrize("weights_amount, cost_funcs_index", std_t_params_1, ids=std_t_cf_ids_1)
 def test_1weights_0bias(std_lrate, std_gens, std_arrlen, weights_amount, cost_funcs_index):
-    """Tests model with weights that are 1 (y = 0*x1 + 0*x2 +0), this should give weights to 1.
+    """Tests model with weights that are 1 (y = 1*x1 + 1*x2 +0), this should give weights to 1.
     """
 
     # creates array of input values
