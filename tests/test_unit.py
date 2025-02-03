@@ -47,3 +47,21 @@ def test_set_cost_function():
     model = melar.LinearRegression(cost_function='test', cost_function_deriv='test_deriv')
     assert model.cost_function == 'test'
     assert model.cost_function_deriv == 'test_deriv'
+    
+@pytest.mark.pandastest
+def test_predict_return_dataframe():
+    """Checks if you get a dataframe as a return when inputing a dataframe into LinearRegression.predict
+    """
+    model = melar.LinearRegression()
+    df = pd.DataFrame([0])
+    prediction = model.predict(df)
+    assert type(prediction).__name__ == "DataFrame"
+
+@pytest.mark.pandastest
+def test_predict_return_series():
+    """Checks if you get a series as a return when inputing a series into LinearRegression.predict
+    """
+    model = melar.LinearRegression()
+    ser = pd.Series([0])
+    prediction = model.predict(ser)
+    assert type(prediction).__name__ == "Series"
