@@ -61,7 +61,7 @@ class LinearRegression:
             Predicted values.
         """
 
-        predictions = self.bias + np.dot(self.weights, x)  # dot product is the sum of w * x
+        predictions = self.bias + np.dot(self.weights, x) 
         return predictions  # this returns an int or a float
 
     def predict(self, x) -> np.int64 | np.float64:
@@ -73,13 +73,19 @@ class LinearRegression:
         Returns:
             Predicted values.
         """
+        # dot product is the sum of w * x
+        
         # If input is dataframe then it will return a dataframe
         if type(x).__name__ == "DataFrame":
             x = x.T
-            predictions = self.bias + np.dot(self.weights, x)  # dot product is the sum of w * x
+            predictions = self.bias + np.dot(self.weights, x) 
             return x.__class__(predictions.T)
+        # If input is series then it will return a series
+        if type(x).__name__ == "Series":
+            predictions = self.bias + np.dot(self.weights, x)
+            return x.__class__(predictions)
 
-        predictions = self.bias + np.dot(self.weights, x)  # dot product is the sum of w * x
+        predictions = self.bias + np.dot(self.weights, x) 
         return predictions  # this returns an int or a float
 
     def adjust(self, x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray,
