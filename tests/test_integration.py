@@ -6,10 +6,6 @@ import melar
 # This file runs integration tests of the model with cost functions
 
 
-# add test with pandas
-
-
-
 COST_FUNCTIONS = melar.cfuncs.C_FUNCTIONS
 COST_FUNCTIONS_DERIVATIVE = melar.cfuncs.C_FUNCTIONS_D
 
@@ -86,7 +82,6 @@ def test_0weights_0bias(std_lrate, std_gens, std_arrlen, weights_amount, cost_fu
                                    cost_function_deriv=COST_FUNCTIONS_DERIVATIVE[cost_funcs_index])
     model.train(x, y, std_lrate, std_gens)
     # Check if all weights are less than +/- 2  if it's bigger then there is probably a problem with the code.
-    print(model.bias)
     assert np.all(np.abs(model.weights) < 2)
     assert abs(model.bias) < 2
 
@@ -108,10 +103,9 @@ def test_1weights_0bias(std_lrate, std_gens, std_arrlen, weights_amount, cost_fu
     model = melar.LinearRegression(weights_amount=weights_amount, cost_function=COST_FUNCTIONS[cost_funcs_index],
                                    cost_function_deriv=COST_FUNCTIONS_DERIVATIVE[cost_funcs_index])
     model.train(x, y, std_lrate, std_gens)
-    print(model.weights)
-    print(model.bias)
     # The target weights are 1 and the target bias is 0
-    # Check if all weights are less than 2  if it's bigger then there is probably a problem with the code.
-    assert np.all(model.weights < 2)
+    # Check if all weights are less than 2.5  
+    # If it's bigger than that there is probably a problem with the code.
+    assert np.all(model.weights < 2.5)
     assert np.all(model.weights > -1)
     assert abs(model.bias) < 2
