@@ -13,14 +13,25 @@ setup(
     url="https://github.com/DrSolidDevil/mlr-gd/",
     author="DrSolidDevil",
     license="BSD 3-Clause",
+    keywords=[
+        "linear regression",
+        "linear",
+        "regression",
+        "gradient descent",
+        "machine learning",
+        "artificial intelligence"
+    ],
     classifiers=[
         "License :: OSI Approved :: BSD License",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Artificial Intelligence"
     ],
     install_requires=["numpy >= 2.2.1"],
     extras_require={
-        "dev": ["twine>=6.0.1", "pandas>=2.2.3", "pytest>=8.3.4"],
+        "dev": ["twine>=6.0.1", "pandas>=2.2.3", "pytest>=8.3.4", "setuptools>=75.8.0"],
     },
     python_requires=">=3.11",
 )
