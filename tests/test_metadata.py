@@ -20,7 +20,7 @@ base_dir = Path(__file__).resolve().parent.parent
 ALL_SAME_VERSION = "0.2.0"
 
 # The license of this package
-LICENSE = "BSD 3-Clause"
+LICENSE = "BSD-3-Clause"
 
 # A list of list with files to ignore the status of, if it has a status present.
 # The list is formated: [ ["parentfolder", "filename"], ["parentfolder", "filename"] ]
