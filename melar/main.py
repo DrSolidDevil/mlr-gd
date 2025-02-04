@@ -121,7 +121,7 @@ class LinearRegression:
         if type(x).__name__ == "DataFrame":
             x = np.array(x).T
         if type(y).__name__ == "DataFrame":
-            y = np.array(y).T
+            y = np.array(y).T{0]
 
         if do_print:
             for current_generation in range(generations):
