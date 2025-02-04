@@ -10,7 +10,7 @@ Cost Functions:
 import numpy as np
 
 
-def mse(y_predictions: np.ndarray, y_target: np.ndarray) -> float:
+def mse(y_predictions: np.ndarray, y_target: np.ndarray) -> np.float64:
     """MSE Function.
 
     Calculates the mean square error of predictions as compared to the target values.
@@ -30,7 +30,7 @@ def mse(y_predictions: np.ndarray, y_target: np.ndarray) -> float:
     return cost
 
 
-def mse_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray):
+def mse_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray) -> tuple:
     """Derivative of mse
 
     Args:
@@ -39,7 +39,7 @@ def mse_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndar
         y_predict: Predicted values.
 
     Returns:
-        Derivative of cost function mse
+        Derivative of cost function mse (tuple: bias_derivative, weights_derivative)
     """
     y_difference = y_training - y_predict
     bias_derivative = -2 * np.mean(y_difference)
@@ -50,7 +50,7 @@ def mse_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndar
     return bias_derivative, weights_derivative
 
 
-def mae(y_predictions: np.ndarray, y_target: np.ndarray) -> float:
+def mae(y_predictions: np.ndarray, y_target: np.ndarray) -> np.float64:
     """MAE Function.
 
     Calculates the mean absolute error of predictions as compared to the target values.
@@ -70,7 +70,7 @@ def mae(y_predictions: np.ndarray, y_target: np.ndarray) -> float:
     return cost
 
 
-def mae_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray):
+def mae_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray) -> tuple:
     """Derivative of mae
 
         Args:
@@ -79,7 +79,7 @@ def mae_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndar
             y_predict: Predicted values.
 
         Returns:
-            Derivative of cost function mae
+            Derivative of cost function mae (tuple: bias_derivative, weights_derivative)
     """
 
     y_difference_sign = np.sign(y_training - y_predict)
