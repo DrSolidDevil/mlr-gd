@@ -3,13 +3,17 @@
   <br><br>
 </h1>
 
-Multiple linear regression by gradient descent.
-<br><br>
-<h4>Disclaimer:</h4>
-This code is very early on and my first proper attempt to create a package so things may be a bit weird/not up to standard.
+<div align="center">
+<a href="https://pypi.org/project/mlr-gd/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/mlr-gd?label=PyPi%20downloads"></a>
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
+<img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/mlr-gd">
+<a href="https://github.com/DrSolidDevil/mlr-gd/blob/main/LICENSE"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/mlr-gd"></a>
+<img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/mlr-gd">
+</div>
 
 <br>
-<br>
+Multiple linear regression by gradient descent.
+<br><br>
 <h2>Installation</h2>
 
 To install mlr-gd you can use [pip](https://pip.pypa.io):
