@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setup(
     name="mlr-gd",
-    version="0.2.0",
+    version="0.2.1",
     description="A package for multiple linear regression by gradient descent.",
     packages=find_packages(exclude=['tests']),
     long_description=long_description,
