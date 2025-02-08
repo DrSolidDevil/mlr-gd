@@ -1,8 +1,9 @@
 <h1 align="center"> <br>
   <img src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png" width="300">
-  <br><br>
+  <br><br>This is the branch for the development of 0.3.0
+  
 </h1>
-
+<h2>The main goal of this version is to improve documentation and reach community standards</h2>
 <div align="center">
 <a href="https://pypi.org/project/mlr-gd/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/mlr-gd?label=PyPi%20downloads"></a>
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
@@ -10,6 +11,10 @@
 <a href="https://github.com/DrSolidDevil/mlr-gd/blob/main/LICENSE"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/mlr-gd"></a>
 <img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/mlr-gd">
 </div>
+
+
+
+
 
 <br>
 Multiple linear regression by gradient descent.
