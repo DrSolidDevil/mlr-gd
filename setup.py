@@ -3,9 +3,11 @@ from setuptools import find_packages, setup
 with open("README.md", "r") as f:
     long_description = f.read()
 
+version = "0.3.0"
+
 setup(
     name="mlr-gd",
-    version="0.2.1",
+    version=version,
     description="A package for multiple linear regression by gradient descent.",
     packages=find_packages(exclude=['tests']),
     long_description=long_description,
@@ -32,6 +34,7 @@ setup(
     install_requires=["numpy >= 2.2.1"],
     extras_require={
         "dev": ["twine>=6.0.1", "pandas>=2.2.3", "pytest>=8.3.4", "setuptools>=75.8.0"],
+        "docs": ["sphinx-rtd-theme >= 3.0.2", "Sphinx >= 8.1.3", "myst-parser >= 4.0.0"]
     },
     python_requires=">=3.11",
 )
