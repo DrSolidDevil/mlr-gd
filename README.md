@@ -4,7 +4,7 @@
   
 </h1>
 <h2>The main goal of this version is to improve documentation and reach community standards</h2>
-<div align="center">
+<div id="badges" align="center">
 <a href="https://pypi.org/project/mlr-gd/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/mlr-gd?label=PyPi%20downloads"></a>
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
 <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/mlr-gd">
