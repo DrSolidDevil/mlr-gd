@@ -4,11 +4,12 @@
 </h1>
 
 <div align="center">
+<a href="https://github.com/DrSolidDevil/mlr-gd//releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/drsoliddevil/mlr-gd"></a>
 <a href="https://pypi.org/project/mlr-gd/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/mlr-gd?label=PyPi%20downloads"></a>
-<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
 <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/mlr-gd">
-<a href="https://github.com/DrSolidDevil/mlr-gd/blob/main/LICENSE"><img alt="PyPI - License" src="https://img.shields.io/pypi/l/mlr-gd"></a>
-<img alt="PyPI - Wheel" src="https://img.shields.io/pypi/wheel/mlr-gd">
+<img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
+<a href="https://mlr-gd.readthedocs.io/"><img alt="Read the Docs" src="https://img.shields.io/readthedocs/mlr-gd"></a>
+<a href="https://github.com/DrSolidDevil/mlr-gd/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/drsoliddevil/mlr-gd"></a>
 </div>
 
 <br>
