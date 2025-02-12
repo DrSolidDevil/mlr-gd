@@ -19,7 +19,7 @@ Home
    :caption: Contents:
 
    modules
-   CHANGELOG.md
+
 
 * :ref:`genindex`
 
