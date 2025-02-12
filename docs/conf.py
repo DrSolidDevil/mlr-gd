@@ -41,6 +41,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 html_theme = 'sphinx_rtd_theme'
 
 shutil.copy('../README.md', '../docs/')
+shutil.copy('../CONTRIBUTING.md', '../docs/')
+shutil.copy('../SECURITY.md', '../docs/')
+shutil.copy('../CODE_OF_CONDUCT.md', '../docs/')
 
 # Removes the badges from the readme
 with open("README.md", "r+") as f:
