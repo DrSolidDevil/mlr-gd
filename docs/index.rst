@@ -19,6 +19,7 @@ Home
    :caption: Contents:
 
    modules
+   contribute
 
 
 * :ref:`genindex`
