@@ -10,6 +10,7 @@
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/DrSolidDevil/mlr-gd">
 <a href="https://mlr-gd.readthedocs.io/"><img alt="Read the Docs" src="https://img.shields.io/readthedocs/mlr-gd"></a>
 <a href="https://github.com/DrSolidDevil/mlr-gd/blob/main/LICENSE"><img alt="GitHub License" src="https://img.shields.io/github/license/drsoliddevil/mlr-gd"></a>
+<img alt="All tests passing" src="https://github.com/DrSolidDevil/mlr-gd/actions/workflows/all-tests.yml/badge.svg">
 </div>
 
 <br>
