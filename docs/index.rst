@@ -2,6 +2,8 @@
 
    <div style="visibility: hidden;">
 
+.. _homepage:
+
 Home
 ========
 
@@ -20,7 +22,6 @@ Home
 
    modules
    contribute
-
 
 * :ref:`genindex`
 * :ref:`search`
