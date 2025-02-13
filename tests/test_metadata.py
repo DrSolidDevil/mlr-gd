@@ -17,7 +17,7 @@ base_dir = Path(__file__).resolve().parent.parent
 
 # If all files should have the same version then enter the version here.
 # If you don't want to check that all have the same version then have this be an empty string.
-ALL_SAME_VERSION = "0.2.1"
+ALL_SAME_VERSION = "0.3.0"
 
 # The license of this package
 LICENSE = "BSD-3-Clause"
