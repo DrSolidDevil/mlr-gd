@@ -12,8 +12,3 @@ Whoops! It looks like you're on a quest for a non-existent page.
 |
 
 Please try using the sidebar to find what you're looking for, or return to the :ref:`homepage<homepage>`.
-
-
-
-
-
