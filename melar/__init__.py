@@ -1,6 +1,6 @@
 """Melar is the module for mlr-gd.
 """
-from melar.main import LinearRegression
+from melar.linear_regression import LinearRegression
 from melar import cfuncs
 
 __author__ = ["DrSolidDevil"]
