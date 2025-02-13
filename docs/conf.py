@@ -39,6 +39,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
 html_theme = 'sphinx_rtd_theme'
+myst_heading_anchors = 5
 
 shutil.copy('../README.md', '../docs/')
 shutil.copy('../CONTRIBUTING.md', '../docs/')
