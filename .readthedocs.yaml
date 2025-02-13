@@ -22,7 +22,7 @@ sphinx:
 
 search:
   # disabled atm
-   :ranking:
+   ranking:
     # index.html: 10
 
      # Documentation files primarily for contributors are less important than code files.
