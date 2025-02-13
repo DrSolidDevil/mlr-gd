@@ -7,7 +7,6 @@ python:
       extra_requirements:
         - docs
 
-
 build:
   os: ubuntu-22.04
   tools:
@@ -17,8 +16,6 @@ sphinx:
   configuration: docs/conf.py
   builder: html
   fail_on_warning: true
-
-
 
 search:
    ranking:
