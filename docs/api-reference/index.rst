@@ -7,4 +7,4 @@ API Reference
    :maxdepth: 2
    :caption: Contents:
 
-   melar
+   melar/index

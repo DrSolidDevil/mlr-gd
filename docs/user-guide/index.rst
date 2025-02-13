@@ -7,6 +7,7 @@ User Guide
    :maxdepth: 2
    :caption: Contents:
 
+   getting-started
    cost-functions
 
 
