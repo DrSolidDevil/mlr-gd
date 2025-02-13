@@ -45,7 +45,6 @@ html_theme_options = {
     "external_links": [
       {"name": "PyPi", "url": "https://pypi.org/project/mlr-gd/"},
       {"name": "Releases", "url": "https://github.com/DrSolidDevil/mlr-gd//releases/"}
-
     ],
 
     "icon_links": [
