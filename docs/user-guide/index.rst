@@ -7,7 +7,8 @@ User Guide
    :maxdepth: 2
    :caption: Contents:
 
-   getting-started
+   quickstart
+   installation
    cost-functions
 
 
