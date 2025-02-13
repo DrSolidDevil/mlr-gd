@@ -1,11 +1,11 @@
-# Configuration file for the Sphinx documentation builder.
-#
 # For the full list of built-in configuration values, see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
+
 import os
 import shutil
 import sys
 
+# Get version from setup.py
 with open("../setup.py", "r") as f:
     for i in f.readlines():
         if i.startswith("version"):
@@ -22,14 +22,9 @@ release = version
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'sphinx.ext.todo', 'sphinx.ext.napoleon', 'myst_parser']
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.viewcode', 'sphinx.ext.napoleon', 'myst_parser']
 # Display todos
 todo_include_todos = True
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute.
-sys.path.insert(0, os.path.abspath('../'))
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -37,9 +32,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
-
 html_theme = 'sphinx_rtd_theme'
+myst_heading_anchors = 5
 
+# -- Path setup --------------------------------------------------------------
+# If extensions (or modules to document with autodoc) are in another directory,
+# add these directories to sys.path here. If the directory is relative to the
+# documentation root, use os.path.abspath to make it absolute.
+sys.path.insert(0, os.path.abspath('../'))
+
+# -- Miscellaneous Tasks -----------------------------------------------------
+
+# Copying other documentation files form outside docs.
 shutil.copy('../README.md', '../docs/')
 shutil.copy('../CONTRIBUTING.md', '../docs/')
 shutil.copy('../SECURITY.md', '../docs/')
