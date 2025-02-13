@@ -39,7 +39,6 @@ html_logo = "../logo.png"
 
 html_theme_options = {
     "logo": {
-        "link": "index.html",
         "alt_text": "mlr-gd"
     },
     "external_links": [
