@@ -1,23 +1,23 @@
-version: "2"
+#version: "2"
 
-build:
-  os: "ubuntu-22.04"
-  tools:
-    python: "3.13"
+#build:
+  #os: "ubuntu-22.04"
+  #tools:
+    #python: "3.13"
 
-python:
-  install:
-    - method: pip
-      path: .
-      extra_requirements:
-        - docs
+#python:
+  #install:
+   # - method: pip
+   #   path: .
+   #   extra_requirements:
+   #     - docs
 
-sphinx:
-  builder: html
-  configuration: conf.py
-  fail_on_warning: true
+#sphinx:
+ # builder: html
+ # configuration: conf.py
+ # fail_on_warning: true
 
-search:
+#search:
   # disabled atm
    #:ranking:
     # index.html: 10
@@ -33,13 +33,50 @@ search:
     # pre.html: -10
     # post.html: -10
 
-   ignore:
+   #ignore:
      # Custom files to ignore
-     - pre.html
-     - post.html
+     #- pre.html
+   #  - post.html
 
      # Defaults
-     - search.html
-     - search/index.html
-     - 404.html
-     - 404/index.html
+    # - search.html
+   #  - search/index.html
+    # - 404.html
+    # - 404/index.html
+
+
+# Read the Docs configuration file for Sphinx projects
+# See https://docs.readthedocs.io/en/stable/config-file/v2.html for details
+
+# Required
+version: 2
+
+# Set the OS, Python version and other tools you might need
+build:
+  os: ubuntu-22.04
+  tools:
+    python: "3.12"
+    # You can also specify other tool versions:
+    # nodejs: "20"
+    # rust: "1.70"
+    # golang: "1.20"
+
+# Build documentation in the "docs/" directory with Sphinx
+sphinx:
+  configuration: docs/conf.py
+  # You can configure Sphinx to use a different builder, for instance use the dirhtml builder for simpler URLs
+  # builder: "dirhtml"
+  # Fail on all warnings to avoid broken references
+  # fail_on_warning: true
+
+# Optionally build your docs in additional formats such as PDF and ePub
+# formats:
+#   - pdf
+#   - epub
+
+# Optional but recommended, declare the Python requirements required
+# to build your documentation
+# See https://docs.readthedocs.io/en/stable/guides/reproducible-builds.html
+# python:
+#   install:
+#     - requirements: docs/requirements.txt
