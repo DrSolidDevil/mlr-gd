@@ -23,6 +23,7 @@ Home
 
 
 * :ref:`genindex`
+* :ref:`search`
 
 |
 
