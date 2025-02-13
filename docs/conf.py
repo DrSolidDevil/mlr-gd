@@ -37,17 +37,11 @@ myst_heading_anchors = 5
 
 html_logo = "../logo.png"
 
-html_sidebars = {
-    "**": ["navbar-nav", "sidebar-nav-bs"]
-}
-
 html_theme_options = {
     "logo": {
         "link": "index.html",
-        "text": "mlr-gd"
+        "alt_text": "mlr-gd"
     },
-    "navbar_start": ["last-updated"],
-    "navbar_center": ["navbar-logo"],
     "external_links": [
       {"name": "PyPi", "url": "https://pypi.org/project/mlr-gd/"},
       {"name": "Releases", "url": "https://github.com/DrSolidDevil/mlr-gd//releases/"}
