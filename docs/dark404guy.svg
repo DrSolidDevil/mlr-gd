@@ -1,0 +1,19 @@
+<svg viewBox="-3.75 -3.75 102.75 251.402" width="106.5" height="255" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="JetBrains Mono">
+      @import url(https://fonts.googleapis.com/css2?family=JetBrains+Mono%3Aital%2Cwght%400%2C100..800%3B1%2C100..800&amp;display=swap);
+    </style>
+  </defs>
+  <circle style="stroke:#fff;fill:none;stroke-width:1.5px" cx="37.5" cy="63.693" r="37.5"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="M37.5 101.193v75m0 0-37.5 75"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px;transform-origin:56.25px 213.693px" d="m75 251.193-37.5-75"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m97.5 93.693-60 22.5"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px;transform-origin:85.5px 72px" d="m97.5 93.75-24-43.5"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m37.5 116.193-37.5 60"/>
+  <circle style="stroke:#fff" cx="18.75" cy="56.193" r="3.75"/>
+  <circle style="stroke:#fff" cx="56.25" cy="56.193" r="3.75"/>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m7.5 52.443 15-7.5m0 41.25 30-7.5"/>
+  <text style="fill:#fff;font-family:&quot;JetBrains Mono&quot;;font-size:26.25px;font-weight:180;white-space:pre" x="67.5" y="38.005">?</text>
+  <text style="fill:#fff;font-family:&quot;JetBrains Mono&quot;;font-size:33.75px;font-weight:100;white-space:pre" x="82.5" y="34.291">?</text>
+  <path style="fill:#fff;stroke:#fff;stroke-width:1.5px;transform-origin:56.2875px 49.068px" d="m48.825 47.943 14.925 2.25"/>
+</svg>
