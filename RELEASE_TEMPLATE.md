@@ -1,0 +1,26 @@
+# mlr-gd VERSION (DATE)
+
+SUMMARY OF RELEASE
+
+(Sections that are not relevant to the release are removed)
+## Breaking Changes
+* LIST OF BREAKING CHANGES (PRIMARILY RESERVED FOR MAJOR RELEASES)
+
+## New Features
+* LIST OF NEW FUNCTIONALITY
+
+## Changes
+* LIST OF MINOR CHANGES AND NEW MINOR FUNCTIONALITY
+
+## Bug Fixes
+* LIST OF BUG FIXES
+
+## Performance Improvements
+* LIST OF IMPROVEMENTS THAT YIELD A SIGNIFICANT BOOST IN PERFORMANCE
+
+## Additional information
+* LIST OF INFORMATION THAT DOES NOT FIT IN ANY OTHER CATEGORY
+
+<br>
+
+**Full Changelog:** LINK TO COMPARING CHANGES
