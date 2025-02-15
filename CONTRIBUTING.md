@@ -25,31 +25,32 @@ mathematical computations.
   5.2. [Report bugs using Github issues](#report-bugs-using-github-issues)\
   5.3. [Roadmap](#roadmap)\
   5.4. [Changelog](#changelog)
-7. [How we release](#how-we-release)\
+6. [How we release](#how-we-release)\
   6.1. [Versioning](#versioning)\
   6.2. [Code names](#code-names)
-8. [Style guide](#style-guide)\
+7. [Style guide](#style-guide)\
   7.1. [Docstrings](#docstrings)\
   7.2. [Type hints](#type-hints)\
   7.3. [Comments](#comments)\
   7.4. [Module-level dunders](#module-level-dunders)
-9. [How you can help](#how-you-can-help)\
+8. [How you can help](#how-you-can-help)\
   8.1. [Bug reporting](#bug-reporting)\
   8.2. [Suggesting enhancements](#suggesting-enhancements)\
   8.3. [Review pull requests](#review-pull-requests)\
   8.4. [Spread the word](#spread-the-word)\
   8.5. [Improve documentation](#improve-documentation)
-10. [Pull requests](#pull-requests)\
+9. [Pull requests](#pull-requests)\
   9.1. [Smaller is better](#smaller-is-better)\
   9.2. [Coordinate bigger changes](#coordinate-bigger-changes)\
   9.3. [Prioritize understanding over cleverness](#prioritize-understanding-over-cleverness)\
   9.4. [Include test coverage](#include-test-coverage)\
   9.5. [Add documentation](#add-documentation)
-11. [Contribution notice](#contribution-notice)
-12. [Contribution credits](#contribution-credits)\
+
+10. [Contribution notice](#contribution-notice)
+11. [Contribution credits](#contribution-credits)\
   11.1. [Attribution for contributions](#attribution-for-contributions)\
   11.2. [Recognizing external contributions](#recognizing-external-contributions)
-13. [Attribution](#attribution)
+12. [Attribution](#attribution)
 
 ## Resources
 * [Roadmap](https://github.com/users/DrSolidDevil/projects/5)
