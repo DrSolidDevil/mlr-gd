@@ -69,6 +69,7 @@ shutil.copy('../README.md', '../docs/')
 shutil.copy('../CONTRIBUTING.md', '../docs/')
 shutil.copy('../SECURITY.md', '../docs/')
 shutil.copy('../CODE_OF_CONDUCT.md', '../docs/')
+shutil.copy('../CHANGELOG.md', '../docs/')
 
 # Removes the badges from the readme
 with open("README.md", "r+") as f:

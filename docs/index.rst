@@ -18,11 +18,16 @@ Home
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: Contents
 
    user-guide/index
    api-reference/index
    contribute
+
+.. toctree::
+   :maxdepth: 1
+
+   CHANGELOG.md
 
 * :ref:`genindex`
 * :ref:`search`
