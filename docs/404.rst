@@ -1,0 +1,19 @@
+:orphan:
+
+===============
+Error 404
+===============
+
+Whoops! It looks like you're on a quest for a non-existent page.
+
+.. raw:: html
+  :file: light404guy.svg
+  :class: only-light
+
+.. raw:: html
+  :file: dark404guy.svg
+  :class: only-dark
+
+|
+
+Please try using the sidebar to find what you're looking for, or return to the :ref:`homepage<homepage>`.

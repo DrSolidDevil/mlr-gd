@@ -2,10 +2,6 @@
 
 Each cost function has a name (ex. mse) that returns a cost.
 Each cost function has a derivative function, indicated by _deriv
-
-Cost Functions:
-• Mean Square Error (mse)
-• Mean Absolute Error (mae)
 """
 import numpy as np
 
@@ -14,12 +10,13 @@ def mse(y_predictions: np.ndarray, y_target: np.ndarray) -> np.float64:
     """MSE Function.
 
     Calculates the mean square error of predictions as compared to the target values.
+
     Args:
-        y_predictions: Predicted values.
-        y_target: Target values.
+        y_predictions (np.ndarray): Predicted values.
+        y_target (np.ndarray): Target values.
 
     Returns:
-        Mean of the squared remainder array (y_predictions - y_target)
+        np.float64: Mean of the squared remainder array (y_predictions - y_target)
     """
 
     if y_predictions.size != y_target.size:
@@ -34,12 +31,12 @@ def mse_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndar
     """Derivative of mse
 
     Args:
-        x_training: Input values.
-        y_training: Target values.
-        y_predict: Predicted values.
+        x_training (np.ndarray): Input values.
+        y_training (np.ndarray): Target values.
+        y_predict (np.ndarray): Predicted values.
 
     Returns:
-        Derivative of cost function mse (tuple: bias_derivative, weights_derivative)
+          tuple (np.float64, np.ndarray): Derivative of cost function mse (bias_derivative, weights_derivative)
     """
     y_difference = y_training - y_predict
     bias_derivative = -2 * np.mean(y_difference)
@@ -54,12 +51,13 @@ def mae(y_predictions: np.ndarray, y_target: np.ndarray) -> np.float64:
     """MAE Function.
 
     Calculates the mean absolute error of predictions as compared to the target values.
+
     Args:
-        y_predictions: Predicted values.
-        y_target: Target values.
+        y_predictions (np.ndarray): Predicted values.
+        y_target (np.ndarray): Target values.
 
     Returns:
-        Mean of the absolute remainder array (y_predictions - y_target)
+        np.float64: Mean of the absolute remainder array (y_predictions - y_target)
     """
 
     if y_predictions.size != y_target.size:
@@ -73,13 +71,13 @@ def mae(y_predictions: np.ndarray, y_target: np.ndarray) -> np.float64:
 def mae_deriv(x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray) -> tuple:
     """Derivative of mae
 
-        Args:
-            x_training: Input values.
-            y_training: Target values.
-            y_predict: Predicted values.
+    Args:
+        x_training (np.ndarray): Input values.
+        y_training (np.ndarray): Target values.
+        y_predict (np.ndarray): Predicted values.
 
-        Returns:
-            Derivative of cost function mae (tuple: bias_derivative, weights_derivative)
+    Returns:
+        tuple (np.float64, np.ndarray): Derivative of cost function mae (bias_derivative, weights_derivative)
     """
 
     y_difference_sign = np.sign(y_training - y_predict)

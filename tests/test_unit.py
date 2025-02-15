@@ -46,8 +46,8 @@ def test_set_cost_function():
     """
     # Uses string for simplicity because the specific function is not actually used in this test.
     model = melar.LinearRegression(cost_function='test', cost_function_deriv='test_deriv')
-    assert model.cost_function == 'test'
-    assert model.cost_function_deriv == 'test_deriv'
+    assert model._cost_function == 'test'
+    assert model._cost_function_deriv == 'test_deriv'
     
 @pytest.mark.pandastest
 def test_predict_return_dataframe():

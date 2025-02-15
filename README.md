@@ -3,7 +3,7 @@
   <br><br>
 </h1>
 
-<div align="center">
+<div id="badges" align="center">
 <a href="https://github.com/DrSolidDevil/mlr-gd//releases/latest"><img alt="GitHub Release" src="https://img.shields.io/github/v/release/drsoliddevil/mlr-gd?label=latest%20release"></a>
 <a href="https://pypi.org/project/mlr-gd/"><img alt="PyPI - Downloads" src="https://img.shields.io/pypi/dm/mlr-gd?label=PyPi%20downloads"></a>
 <img alt="PyPI - Python Version" src="https://img.shields.io/pypi/pyversions/mlr-gd">
