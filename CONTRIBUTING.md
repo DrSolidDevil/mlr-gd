@@ -23,32 +23,33 @@ mathematical computations.
 5. [How we work](#how-we-work)\
   5.1. [We use GitHub](#we-use-github)\
   5.2. [Report bugs using Github issues](#report-bugs-using-github-issues)\
-  5.3. [Roadmap](#roadmap)
-6. [How we release](#how-we-release)\
+  5.3. [Roadmap](#roadmap)\
+  5.4. [Changelog](#changelog)
+7. [How we release](#how-we-release)\
   6.1. [Versioning](#versioning)\
   6.2. [Code names](#code-names)
-7. [Style guide](#style-guide)\
+8. [Style guide](#style-guide)\
   7.1. [Docstrings](#docstrings)\
   7.2. [Type hints](#type-hints)\
   7.3. [Comments](#comments)\
   7.4. [Module-level dunders](#module-level-dunders)
-8. [How you can help](#how-you-can-help)\
+9. [How you can help](#how-you-can-help)\
   8.1. [Bug reporting](#bug-reporting)\
   8.2. [Suggesting enhancements](#suggesting-enhancements)\
   8.3. [Review pull requests](#review-pull-requests)\
   8.4. [Spread the word](#spread-the-word)\
   8.5. [Improve documentation](#improve-documentation)
-9. [Pull requests](#pull-requests)\
+10. [Pull requests](#pull-requests)\
   9.1. [Smaller is better](#smaller-is-better)\
   9.2. [Coordinate bigger changes](#coordinate-bigger-changes)\
   9.3. [Prioritize understanding over cleverness](#prioritize-understanding-over-cleverness)\
   9.4. [Include test coverage](#include-test-coverage)\
   9.5. [Add documentation](#add-documentation)
-10. [Contribution notice](#contribution-notice)
-11. [Contribution credits](#contribution-credits)\
+11. [Contribution notice](#contribution-notice)
+12. [Contribution credits](#contribution-credits)\
   11.1. [Attribution for contributions](#attribution-for-contributions)\
   11.2. [Recognizing external contributions](#recognizing-external-contributions)
-12. [Attribution](#attribution)
+13. [Attribution](#attribution)
 
 ## Resources
 * [Roadmap](https://github.com/users/DrSolidDevil/projects/5)
@@ -69,7 +70,6 @@ with the project's goals. We prioritize contributions that address
 known issues and planned features, as they tend to have the greatest
 impact—but don’t let that discourage you! Your input is always
 valuable.
-
 
 We look forward to collaborating with you!
 
@@ -114,6 +114,43 @@ When a pull-request gets merged it is marked as “Complete”.
 <div align="center"><img src="https://i.postimg.cc/MHPbJcfg/roadmap-flow.png" width="800"></div>
 <br>
 
+### Changelog
+To help users and contributors understand what substantial changes have 
+taken place between each version of mlr-gd, we keep a changelog.
+
+* The changelog is ordered in recency, with the latest changes at the top.
+* Headers should be linked to the release.
+* Similar changes should be grouped when possible.
+* If appropriate, add a short summary of the version changes, no longer than two to three lines.
+* Strive for conciseness.
+
+Our changelog is quite simple and follows this template:
+```markdown
+## VERSION (DATE)
+
+### Added
+* LIST OF ADDED FEATURES
+
+### Changed
+* LIST OF CHANGES TO EXISTING FUNCTIONALITY
+
+### Deprecated
+* LIST OF SOON-TO-BE DEPRECATIONS
+
+### Removed
+* LIST OF REMOVED FEATURES
+
+### Fixed
+* LIST OF BUG FIXES
+
+### Security
+* LIST OF FIXED VULNERABILITIES]
+
+### Documentation
+* LIST OF DOCUMENTATION CHANGES
+```
+Sections that are not relevant to the release are no to be included.
+
 ## How we release
 Releases are expected to have been tested and reviewed.
 
@@ -133,11 +170,7 @@ alphabet being the same as the version.
 The code names should only be used for the release major versions
 (x.0.0) with all other releases exclusively being the version.
 
-Although you can refer to all versions by their code name followed by
-the minor and patch (i.e. Name Minor.Patch), this should not be used
-in any official documentation.
-
-  While you can refer to all versions by their code name followed by
+While you can refer to all versions by their code name followed by
 the minor and patch (i.e., Name Minor.Patch), official documentation
 should use semantic versioning (i.e., Major.Minor.Patch).
 
