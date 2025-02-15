@@ -1,28 +1,20 @@
 # Changelog
 
-
-## 0.3.0 (DATE)
+## [0.3.0](https://github.com/DrSolidDevil/mlr-gd/releases/tag/v0.3.0) (2025-02-15)
 
 ### Added
-* LIST OF ADDED FEATURES
-
-### Changed
-* LIST OF CHANGES TO EXISTING FUNCTIONALITY
-
-### Deprecated
-* LIST OF SOON-TO-BE DEPRECATIONS
-
-### Removed
-* LIST OF REMOVED FEATURES
-
-### Fixed
-* LIST OF BUG FIXES
-
-### Security
-* LIST OF FIXED VULNERABILITIES
+* Detailed documentation with hosting on readthedocs.io
+* Github action for running tests before push to main branch.
+* Issue template for bug reports and enhancement suggestions.
+* Pull-request template.
 
 ### Documentation
-* LIST OF DOCUMENTATION CHANGES
+* Created contribution guidelines
+* Created security policy
+* Created code of conduct
+* Created changelog
+* Created release template
+* Created release checklist
 
 <br>
 
