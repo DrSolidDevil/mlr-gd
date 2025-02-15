@@ -42,8 +42,7 @@ html_theme_options = {
         "alt_text": "mlr-gd"
     },
     "external_links": [
-      {"name": "PyPi", "url": "https://pypi.org/project/mlr-gd/"},
-      {"name": "Releases", "url": "https://github.com/DrSolidDevil/mlr-gd//releases/"}
+      {"name": "PyPi", "url": "https://pypi.org/project/mlr-gd/"}
     ],
     "show_nav_level": 4,
 
@@ -76,6 +75,9 @@ with open("README.md", "r+") as f:
     f_r = f.read()
     f.seek(0)
     pre, post = f_r.split('<div id="badges"')
+    # By default, the pydata theme gives images with a transparent background a white background.
+    # To avoid this you add the class "dark-light"
+    pre = pre.replace('src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png"', 'src="https://raw.githubusercontent.com/DrSolidDevil/mlr-gd/main/logo.png" class="dark-light"')
     post = post.split('</div>')[1]
     extra = post.split('<h2>')
     f.write(pre + extra[0])

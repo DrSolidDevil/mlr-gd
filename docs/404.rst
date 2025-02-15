@@ -7,7 +7,12 @@ Error 404
 Whoops! It looks like you're on a quest for a non-existent page.
 
 .. raw:: html
-  :file: 404guy.svg
+  :file: light404guy.svg
+  :class: only-light
+
+.. raw:: html
+  :file: dark404guy.svg
+  :class: only-dark
 
 |
 

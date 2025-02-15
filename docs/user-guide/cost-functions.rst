@@ -7,7 +7,7 @@ Cost functions
     of one or more variables onto a real number intuitively representing some "cost"
     associated with the event.
 
-    \- `Wikipedia <Wikipedia: https://en.wikipedia.org/wiki/loss_function>`_
+    \- `Wikipedia <https://en.wikipedia.org/wiki/loss_function>`_
 
 |
 

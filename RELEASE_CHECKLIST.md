@@ -6,6 +6,7 @@
 - [ ] Verify all module-level dunders
 - [ ] Verify contents of the documentation on https://mlr-gd-test.readthedocs.io/en/latest/
 - [ ] Build release
+- [ ] Run ``twine check dist/*``
 - [ ] Test install source distribution
 - [ ] Test install built distribution
 - [ ] Upload release to https://test.pypi.org/
