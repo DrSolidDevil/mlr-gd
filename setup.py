@@ -33,7 +33,8 @@ setup(
     ],
     install_requires=["numpy >= 2.2.1"],
     extras_require={
-        "dev": ["twine>=6.0.1", "pandas>=2.2.3", "pytest>=8.3.4", "setuptools>=75.8.0"],
+        "dev": ["pandas>=2.2.3", "pytest>=8.3.4", "setuptools>=75.8.0"],
+        "release": ["twine>=6.0.1", "build>=1.2.2"],
         "docs": ["pydata-sphinx-theme >= 0.16.1", "Sphinx >= 8.1.3", "myst-parser >= 4.0.0"]
     },
     python_requires=">=3.11",
