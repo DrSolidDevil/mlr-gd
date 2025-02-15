@@ -1,3 +1,5 @@
+.. _linregmodule:
+
 linear\_regression module
 ==========================
 

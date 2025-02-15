@@ -39,13 +39,13 @@ html_logo = "../logo.png"
 
 html_theme_options = {
     "logo": {
-        "link": "index.html",
         "alt_text": "mlr-gd"
     },
     "external_links": [
       {"name": "PyPi", "url": "https://pypi.org/project/mlr-gd/"},
       {"name": "Releases", "url": "https://github.com/DrSolidDevil/mlr-gd//releases/"}
     ],
+    "show_nav_level": 4,
 
     "icon_links": [
         {

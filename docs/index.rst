@@ -20,7 +20,8 @@ Home
    :maxdepth: 2
    :caption: Contents:
 
-   modules
+   user-guide/index
+   api-reference/index
    contribute
 
 * :ref:`genindex`
