@@ -10,8 +10,8 @@
   <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m97.5 93.693-60 22.5"/>
   <path style="fill:#fff;stroke:#fff;stroke-width:1.5px;transform-origin:85.5px 72px" d="m97.5 93.75-24-43.5"/>
   <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m37.5 116.193-37.5 60"/>
-  <circle style="stroke:#fff" cx="18.75" cy="56.193" r="3.75"/>
-  <circle style="stroke:#fff" cx="56.25" cy="56.193" r="3.75"/>
+  <circle style="stroke:#fff;fill:#fff" cx="18.75" cy="56.193" r="3.75"/>
+  <circle style="stroke:#fff;fill:#fff" cx="56.25" cy="56.193" r="3.75"/>
   <path style="fill:#fff;stroke:#fff;stroke-width:1.5px" d="m7.5 52.443 15-7.5m0 41.25 30-7.5"/>
   <text style="fill:#fff;font-family:&quot;JetBrains Mono&quot;;font-size:26.25px;font-weight:180;white-space:pre" x="67.5" y="38.005">?</text>
   <text style="fill:#fff;font-family:&quot;JetBrains Mono&quot;;font-size:33.75px;font-weight:100;white-space:pre" x="82.5" y="34.291">?</text>
