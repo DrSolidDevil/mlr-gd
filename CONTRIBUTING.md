@@ -163,18 +163,6 @@ opinions.
 mlr-gd follows the [semantic versioning](https://semver.org/) scheme
 (Major.Minor.Patch).
 
-### Code names
-All major versions have a code name, these code names are the names of
-mathematicians; from A to Z with the first letters place in the
-alphabet being the same as the version.
-
-The code names should only be used for the release major versions
-(x.0.0) with all other releases exclusively being the version.
-
-While you can refer to all versions by their code name followed by
-the minor and patch (i.e., Name Minor.Patch), official documentation
-should use semantic versioning (i.e., Major.Minor.Patch).
-
 ## Style Guide
 ### Docstrings
 We use [google-style](https://google.github.io/styleguide/pyguide.html#381-docstrings)
