@@ -72,6 +72,12 @@ known issues and planned features, as they tend to have the greatest
 impact—but don’t let that discourage you! Your input is always
 valuable.
 
+### AI Generate Code
+The use of artificial intelligence, such as Large-Language Models for writing code, documentation or similar contributions is not permitted.
+We believe that AI has not yet reached a level where it can consistently produce reliable, thoughtful input that meaningfully improves this project.
+However, using AI as a support tool for tasks like seeking advice, explanations, or general guidance is allowed.
+
+
 We look forward to collaborating with you!
 
 ## How we work
