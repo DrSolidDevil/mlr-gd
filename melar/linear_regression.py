@@ -19,7 +19,7 @@ class LinearRegression:
         cost_function_deriv: Derivative of the cost function. Default is the derivative of Mean Squared Error.
     """
 
-    __slots__ = ['bias', '_cost_function', '_cost_function_deriv', 'weights']
+    __slots__ = ['weights', 'bias', '_cost_function', '_cost_function_deriv']
 
     def __init__(self, initial_weights: np.ndarray | np.float64 | float = None,
                  initial_bias: np.float64 | float = np.random.uniform(-1, 1), weights_amount: int = 1,
