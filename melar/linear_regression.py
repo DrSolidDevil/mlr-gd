@@ -1,3 +1,5 @@
+import json
+
 import numpy as np
 
 import melar.cfuncs as cfuncs
@@ -67,10 +69,24 @@ class LinearRegression:
         return f"{self.__class__.__name__}(bias={self.bias}, weights={self.weights})"
 
     def save(self, filename: str):
-        pass
+        save_data = {
+            "weights": self.weights.tolist(),
+            "bias": float(self.bias)
+        }
+        with open(filename, "w") as file:
+            json.dump(save_data, file)
 
     def load(self, filename: str):
-        pass
+        """Loads model
+
+        Args:
+            filename (str): Filename
+        """
+        with open(filename, "r") as file:
+            loaded_data = json.load(file)
+        loaded_data = json.loads(loaded_data)
+        self.weights = np.array(loaded_data["weights"])
+        self.bias = np.float32(loaded_data["bias"])
 
     def np_predict(self, x: np.ndarray) -> np.float64 | np.ndarray:
         """Predict using the linear model.
