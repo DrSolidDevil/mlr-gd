@@ -66,6 +66,12 @@ class LinearRegression:
         """
         return f"{self.__class__.__name__}(bias={self.bias}, weights={self.weights})"
 
+    def save(self, filename: str):
+        pass
+
+    def load(self, filename: str):
+        pass
+
     def np_predict(self, x: np.ndarray) -> np.float64 | np.ndarray:
         """Predict using the linear model.
 
