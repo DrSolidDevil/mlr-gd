@@ -1,5 +1,5 @@
 import numpy as np
-from linear_regression import LinearRegression
+from melar.linear_regression import LinearRegression
 
 
 def tss(y) -> np.float32:
