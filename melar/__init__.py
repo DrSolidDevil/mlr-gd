@@ -11,4 +11,4 @@ __license__ = "BSD-3-Clause"
 __maintainer__ = ["DrSoliDevil"]
 __status__ = "Development"
 __version__ = '0.4.0'
-__version_info__ = (0, 3, 0)
+__version_info__ = (0, 4, 0)
