@@ -26,7 +26,7 @@ class LinearRegression:
     def __init__(self, initial_weights: np.ndarray | np.float64 | float = None,
                  initial_bias: np.float64 | float = np.random.uniform(-1, 1), weights_amount: int = 1,
                  cost_function=cfuncs.mse,
-                 cost_function_deriv=cfuncs.mse_deriv) -> None:
+                 cost_function_deriv=cfuncs.mse_deriv, do_print=False) -> None:
         """Initializes the LinearRegression model with the given parameters.
 
         Args:
@@ -35,28 +35,35 @@ class LinearRegression:
             weights_amount (int, optional): Number of weights. Defaults to 1.
             cost_function (callable, optional): Cost function to be minimized. Defaults to cfuncs.mse.
             cost_function_deriv (callable, optional): Derivative of the cost function. Defaults to cfuncs.mse_deriv.
+            do_print (bool, optional): Print during initialization. Defaults to false.
         """
-
+        if do_print: print(f"----Model Initialization----\nweights_amount: {weights_amount}")
         if weights_amount < 1:
             raise ValueError("weights_amount has to be 1 or more")
 
         self.bias = initial_bias
         """np.float64: Bias of the model instance. Default is a random float between -1 and 1.
         """
-
         self._cost_function = cost_function
         self._cost_function_deriv = cost_function_deriv
+        if do_print: print(f"bias: {self.bias}\ncost_function:{self._cost_function}\ncost_function_derivative: {self._cost_function_deriv}")
         if initial_weights is None:
             self.weights = np.random.uniform(low=-1, high=1, size=weights_amount)
             """np.float64 or np.ndarray: Weights of the model instance. If there is only one weight, it is a float; otherwise, it is an array.
             """
+            if do_print:
+                with np.printoptions(threshold=np.inf): print(f"No initial weights\nweights: {self.weights}")
             # Prevents error from happening when you have one weight because
             # np.dot will not accept arrays of different shapes, but it does accept scalars.
             if weights_amount == 1:
                 self.weights = self.weights[0]
+                if do_print: print(f"Single weight\nweight: {self.weights}")
 
         else:
             self.weights = initial_weights
+            if do_print:
+                with np.printoptions(threshold=np.inf): print(f"Initial weights\nweights: {self.weights}")
+
 
     def __repr__(self):
         """Returns a string representation of the LinearRegression model.
