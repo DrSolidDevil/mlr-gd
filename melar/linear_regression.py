@@ -66,7 +66,7 @@ class LinearRegression:
         """
         return f"{self.__class__.__name__}(bias={self.bias}, weights={self.weights})"
 
-    def np_predict(self, x: np.ndarray) -> np.float64:
+    def np_predict(self, x: np.ndarray) -> np.float64 | np.ndarray:
         """Predict using the linear model.
 
         This is a version of predict that only accepts numpy arrays.
@@ -77,22 +77,21 @@ class LinearRegression:
             x (np.ndarray): Input value(s) to be predicted.
 
         Returns:
-            np.float64: Predicted values.
+            (np.float64 | np.ndarray): Predicted values.
         """
 
         predictions = self.bias + np.dot(self.weights, x)
         return predictions  # this returns an int or a float
 
-    def predict(self, x) -> np.float64:
+    def predict(self, x):
         """Predict using the linear model.
 
         Args:
             x (np.ndarray | pd.DataFrame | pd.Series): Input value(s) to be predicted.
 
         Returns:
-            np.float64: Predicted values.
+            (np.float64 | np.ndarray | pd.DataFrame | pd.Series): Predicted values.
         """
-        # dot product is the sum of w * x
 
         # If input is dataframe then it will return a dataframe
         if type(x).__name__ == "DataFrame":
@@ -105,7 +104,21 @@ class LinearRegression:
             return x.__class__(predictions)
 
         predictions = self.bias + np.dot(self.weights, x)
-        return predictions  # this returns an int or a float
+        return predictions
+
+    def __call__(self, x):
+        """Predict using the linear model.
+
+        Args:
+            x (np.ndarray | pd.DataFrame | pd.Series): Input value(s) to be predicted.
+
+        Returns:
+            (np.float64 | np.ndarray | pd.DataFrame | pd.Series): Predicted values.
+
+        Notes:
+            This is a shorthand for self.predict(x)
+        """
+        return self.predict(x)
 
     def adjust(self, x_training: np.ndarray, y_training: np.ndarray, y_predict: np.ndarray,
                learning_rate: float) -> None:
@@ -141,9 +154,6 @@ class LinearRegression:
             generations (int): Amount of times to adjust.
             do_print (bool): Whether to print the loss for every generation during training.
         """
-
-        # Checks if x and y are dataframes.
-        # If so, it transposes them to be compatible with the adjust method.
 
         if type(x).__name__ == "DataFrame":
             x = np.array(x).T
